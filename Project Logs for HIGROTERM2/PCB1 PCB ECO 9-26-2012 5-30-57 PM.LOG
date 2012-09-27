@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=RESET Pin=C1-1
+Change Component Comment : Designator=P1 Old Comment=Header 4 New Comment=I2C
+Change Component Comment : Designator=P6 Old Comment=Header 4 New Comment=SPI
+Change Component Comment : Designator=P8 Old Comment=Header 5X2H New Comment=JTAG
+Change Component Comment : Designator=P7 Old Comment=Header 5X2H New Comment=LCD_CONN
+Added Pin To Net: NetName=ISP Pin=C1-1
+Added Pin To Net: NetName=RESET Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Member To Class: ClassName=HIGROTERM Member=Component C5 EKE00BA210L00

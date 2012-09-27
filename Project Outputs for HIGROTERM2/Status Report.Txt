@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [HIGROTERM2.PrjPcb]
+   Generated File[HIGROTERM1.TXT]
+   Generated File[HIGROTERM1.LDP]
+   Generated File[HIGROTERM1.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 5:51:57 PM On 9/8/2012

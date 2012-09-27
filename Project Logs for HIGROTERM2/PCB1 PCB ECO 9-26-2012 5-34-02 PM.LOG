@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=RESET Pin=C1-1
+Removed Pin From Net: NetName=AD6 Pin=P5-1
+Removed Pin From Net: NetName=AD0 Pin=P5-2
+Removed Pin From Net: NetName=AD1 Pin=P5-3
+Removed Pin From Net: NetName=AD2 Pin=P5-4
+Removed Pin From Net: NetName=AD3 Pin=P5-5
+Removed Pin From Net: NetName=AD4 Pin=P5-6
+Removed Pin From Net: NetName=AD5 Pin=P5-7
+Removed Pin From Net: NetName=AD7 Pin=P5-8
+Added Pin To Net: NetName=ISP Pin=C1-1
+Added Pin To Net: NetName=RESET Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2

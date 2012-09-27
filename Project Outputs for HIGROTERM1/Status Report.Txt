@@ -1,0 +1,18 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [HIGROTERM1.PrjPcb]
+   Generated File[HIGROTERM1.GTL]
+   Generated File[HIGROTERM1.GBL]
+   Generated File[HIGROTERM1.GTO]
+   Generated File[HIGROTERM1.GBO]
+   Generated File[HIGROTERM1.GD1]
+   Generated File[HIGROTERM1.GG1]
+   Generated File[HIGROTERM1.RUL]
+   Generated File[HIGROTERM1.EXTREP]
+   Generated File[HIGROTERM1.REP]
+
+
+Files Generated   : 9
+Documents Printed : 0
+
+Finished Output Generation At 19:29:50 On 2012-07-20

@@ -1,0 +1,36 @@
+Move Component(s) Origin to Grid
+Filename     : C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc
+Date         : 2012-08-02
+Time         : 22:46:43
+Time Elapsed : 00:00:00
+
+
+    SMT Small Component Y1-XTAL (3500mil,2500mil) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Component U2-LM1117MPX-3.3/NOPB (4885mil,1670mil) on Top Layer - Component pads are OFF grid. No action taken.
+    LCC Component U1-LPC1114FHN33/301 (4000mil,2500mil) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component R4-Res3 (7335mil,1780mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R3-Res3 (7150mil,1780mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R2-1K (5720mil,1780mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R1-1K (6415mil,1780mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component P7-Header 6 (5890mil,1260mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component P6-Header 4 (1930mil,1460mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component P5-Header 8 (6060mil,1060mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component P4-Header 4 (1255mil,1060mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component P3-Header 6 (5160mil,1260mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component P2-Header 3 (6230mil,1560mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component P1-Header 4 (6980mil,1460mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Component J1-PWR2.5 (4420mil,1200mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SOIC Component IC1-SHT21 (1460mil,1285mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component D2-LED2 (1755mil,1685mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component D1-D Schottky (5340mil,1645mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C10-C0805 (3205mil,1745mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C9-C0805 (3055mil,1780mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C8-EKE00BA210L00 (3985mil,1670mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C7-EKE00BA210L00 (3705mil,1670mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C6-C0805 (1085mil,1380mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C5-EKE00BA210L00 (2165mil,1670mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C4-C0805 (3300mil,2400mil) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C3-C0805 (3300mil,2600mil) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C2-0805 (3470mil,1780mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component C1-C0805 (5535mil,1780mil) on Top Layer - Component pads are OFF grid. No action taken.
+count : 28

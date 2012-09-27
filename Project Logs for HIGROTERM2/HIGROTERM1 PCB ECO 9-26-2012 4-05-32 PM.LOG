@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=E Pin=P7-4
+Removed Pin From Net: NetName=RS Pin=P7-6
+Removed Pin From Net: NetName=DB7 Pin=P7-9
+Removed Pin From Net: NetName=DB6 Pin=P7-10
+Added Component: Designator=P8(HDR2X5H)
+Added Pin To Net: NetName=RS Pin=P7-4
+Added Pin To Net: NetName=E Pin=P7-6
+Added Pin To Net: NetName=DB6 Pin=P7-9
+Added Pin To Net: NetName=DB7 Pin=P7-10
+Added Pin To Net: NetName=VDD Pin=P8-1
+Added Pin To Net: NetName=AD4 Pin=P8-2
+Added Pin To Net: NetName=GND Pin=P8-3
+Added Pin To Net: NetName=R/W Pin=P8-4
+Added Pin To Net: NetName=GND Pin=P8-5
+Added Pin To Net: NetName=MOSI Pin=P8-6
+Added Pin To Net: NetName=GND Pin=P8-9
+Added Pin To Net: NetName=VDD Pin=P8-10
+Added Pin To Net: NetName=VDD Pin=U1-2
+Change Net Name : Old Net Name=VDD New Net Name=RESET
+Added Member To Class: ClassName=HIGROTERM Member=Component P8 Header 5X2H

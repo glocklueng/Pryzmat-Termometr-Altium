@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=RESET Pin=C1-1
+Change Component Designator: OldDesignator=C5 NewDesignator=C2
+Change Component Designator: OldDesignator=C5 NewDesignator=C6
+Change Component Designator: OldDesignator=C? NewDesignator=C7
+Added Pin To Net: NetName=ISP Pin=C1-1
+Added Pin To Net: NetName=RESET Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=NetC3_2 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=RESET Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Change Net Name : Old Net Name=NetC3_2 New Net Name=NetC2_1
+Change Net Name : Old Net Name=NetC?_1 New Net Name=NetC7_1
+Change Net Name : Old Net Name=NetC?_2 New Net Name=NetC7_2
+Added Member To Class: ClassName=HIGROTERM Member=Component C2 EKE00BA210L00
+Added Member To Class: ClassName=HIGROTERM Member=Component C6 EKE00BA210L00

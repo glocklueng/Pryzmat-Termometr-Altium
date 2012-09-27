@@ -1,0 +1,7 @@
+Change Component DesignItemId : Designator=C7 Old DesignItemId=Cap Pol3 New DesignItemId=EKE00BA210L00
+Change Component DesignItemId : Designator=C8 Old DesignItemId=Cap Pol3 New DesignItemId=EKE00BA210L00
+Change Component Footprint: Designator=C7 Old Footprint=C0805 New Footprint=SMD-CPOL
+Change Component Footprint: Designator=C8 Old Footprint=C0805 New Footprint=SMD-CPOL
+Change Component Footprint: Designator=C5 Old Footprint=CAPPR2.5-6.3X11 New Footprint=SMD-CPOL
+Change Component Comment : Designator=C7 Old Comment=Cap Pol3 New Comment=EKE00BA210L00
+Change Component Comment : Designator=C8 Old Comment=Cap Pol3 New Comment=EKE00BA210L00

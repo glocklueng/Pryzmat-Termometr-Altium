@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=RESET Pin=C1-1
+Added Component: Designator=P11(HDR1X2)
+Added Pin To Net: NetName=ISP Pin=C1-1
+Added Pin To Net: NetName=RESET Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=NetD1_1 Pin=P11-1
+Added Pin To Net: NetName=GND Pin=P11-2
+Added Member To Class: ClassName=HIGROTERM Member=Component P11 Header 2
+Added Member To Class: ClassName=HIGROTERM Member=Component R3 Res3

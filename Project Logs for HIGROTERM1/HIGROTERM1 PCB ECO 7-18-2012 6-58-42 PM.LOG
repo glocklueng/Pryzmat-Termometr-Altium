@@ -1,0 +1,112 @@
+Added Component: Designator=C7(C0805)
+Added Component: Designator=C8(C0805)
+Added Component: Designator=C9(0805)
+Added Component: Designator=C10(0805)
+Added Component: Designator=D1(SMB)
+Added Component: Designator=D2(3.2X1.6X1.1)
+Added Component: Designator=J1(KLD-0202)
+Added Component: Designator=P5(HDR1X8)
+Added Component: Designator=P6(HDR1X4)
+Added Component: Designator=P7(HDR1X6)
+Added Component: Designator=R3(6-0805)
+Added Component: Designator=R4(6-0805)
+Added Component: Designator=U2(MP04A_N)
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=VDD Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=VDD Pin=C10-2
+Added Pin To Net: NetName=VDD Pin=D2-1
+Added Pin To Net: NetName=GND Pin=J1-2A
+Added Pin To Net: NetName=GND Pin=J1-2B
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3A
+Added Pin To Net: NetName=GND Pin=J1-3B
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=SCL Pin=R3-1
+Added Pin To Net: NetName=VDD Pin=R3-2
+Added Pin To Net: NetName=SDA Pin=R4-1
+Added Pin To Net: NetName=VDD Pin=R4-2
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=VDD Pin=U2-2
+Added Pin To Net: NetName=AD0 Pin=P5-1
+Added Pin To Net: NetName=AD0 Pin=U1-21
+Added Net: Name=AD0
+Added Pin To Net: NetName=AD1 Pin=P5-2
+Added Pin To Net: NetName=AD1 Pin=U1-22
+Added Net: Name=AD1
+Added Pin To Net: NetName=AD2 Pin=P5-3
+Added Pin To Net: NetName=AD2 Pin=U1-23
+Added Net: Name=AD2
+Added Pin To Net: NetName=AD3 Pin=P5-4
+Added Pin To Net: NetName=AD3 Pin=U1-24
+Added Net: Name=AD3
+Added Pin To Net: NetName=AD4 Pin=P5-5
+Added Pin To Net: NetName=AD4 Pin=U1-25
+Added Net: Name=AD4
+Added Pin To Net: NetName=AD5 Pin=P5-6
+Added Pin To Net: NetName=AD5 Pin=U1-26
+Added Net: Name=AD5
+Added Pin To Net: NetName=AD6 Pin=P5-7
+Added Pin To Net: NetName=AD6 Pin=U1-20
+Added Net: Name=AD6
+Added Pin To Net: NetName=AD7 Pin=P5-8
+Added Pin To Net: NetName=AD7 Pin=U1-27
+Added Net: Name=AD7
+Added Pin To Net: NetName=MISO Pin=P6-4
+Added Pin To Net: NetName=MISO Pin=U1-17
+Added Net: Name=MISO
+Added Pin To Net: NetName=MOSI Pin=P6-3
+Added Pin To Net: NetName=MOSI Pin=U1-18
+Added Net: Name=MOSI
+Added Pin To Net: NetName=NetC7_1 Pin=C7-1
+Added Pin To Net: NetName=NetC7_1 Pin=C9-2
+Added Pin To Net: NetName=NetC7_1 Pin=D1-2
+Added Pin To Net: NetName=NetC7_1 Pin=U2-3
+Added Net: Name=NetC7_1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=J1-1
+Added Pin To Net: NetName=NetD1_1 Pin=J1-1A
+Added Pin To Net: NetName=NetD1_1 Pin=J1-1B
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=PIO0 Pin=P7-1
+Added Pin To Net: NetName=PIO0 Pin=U1-9
+Added Net: Name=PIO0
+Added Pin To Net: NetName=PIO1 Pin=P7-2
+Added Pin To Net: NetName=PIO1 Pin=U1-19
+Added Net: Name=PIO1
+Added Pin To Net: NetName=PIO2 Pin=P7-3
+Added Pin To Net: NetName=PIO2 Pin=U1-7
+Added Net: Name=PIO2
+Added Pin To Net: NetName=PIO3 Pin=P7-4
+Added Pin To Net: NetName=PIO3 Pin=U1-12
+Added Net: Name=PIO3
+Added Pin To Net: NetName=PIO4 Pin=P7-5
+Added Pin To Net: NetName=PIO4 Pin=U1-28
+Added Net: Name=PIO4
+Added Pin To Net: NetName=PIO5 Pin=P7-6
+Added Pin To Net: NetName=PIO5 Pin=U1-13
+Added Net: Name=PIO5
+Added Pin To Net: NetName=PIO6 Pin=D2-2
+Added Pin To Net: NetName=PIO6 Pin=U1-14
+Added Net: Name=PIO6
+Added Pin To Net: NetName=SCK0 Pin=P6-1
+Added Pin To Net: NetName=SCK0 Pin=U1-15
+Added Net: Name=SCK0
+Added Pin To Net: NetName=SSEL0 Pin=P6-2
+Added Pin To Net: NetName=SSEL0 Pin=U1-8
+Added Net: Name=SSEL0
+Added Member To Class: ClassName=HIGROTERM Member=Component C7 Cap Pol3
+Added Member To Class: ClassName=HIGROTERM Member=Component C8 Cap Pol3
+Added Member To Class: ClassName=HIGROTERM Member=Component C9 C0805
+Added Member To Class: ClassName=HIGROTERM Member=Component C10 C0805
+Added Member To Class: ClassName=HIGROTERM Member=Component D1 D Schottky
+Added Member To Class: ClassName=HIGROTERM Member=Component D2 LED2
+Added Member To Class: ClassName=HIGROTERM Member=Component J1 PWR2.5
+Added Member To Class: ClassName=HIGROTERM Member=Component P5 Header 8
+Added Member To Class: ClassName=HIGROTERM Member=Component P6 Header 4
+Added Member To Class: ClassName=HIGROTERM Member=Component P7 Header 6
+Added Member To Class: ClassName=HIGROTERM Member=Component R3 Res3
+Added Member To Class: ClassName=HIGROTERM Member=Component R4 Res3
+Added Member To Class: ClassName=HIGROTERM Member=Component U2 LM1117MPX-3.3/NOPB

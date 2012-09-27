@@ -1,0 +1,266 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body { 
+			font-family : verdana;
+		}
+		td, th {  
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;	
+		}
+		th { 
+			background-color : #A6CAF0;
+		
+		}
+		th.column1, td.column1 { 
+			text-align: left;
+			width : auto; 
+		}
+		table { 
+			width : 100%; 
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3 {
+			padding-top : 0.1em;
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top
+		}
+		.front_matter_column1 {
+			text-align : right;
+		}
+		.total_column1, .total_column {
+			font-weight : bold;	
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.front_matter_column2 {
+			text-align : center;
+		}
+		.front_matter_column3 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow 
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Move Component(s) Origin to Grid</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Move Component(s) Origin to Grid</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">2012-08-02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">22:46:43</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc" class="file"><acronym title="C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc">C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+<hr><a name="IDASAKCD"><h2>Components Origin</h2></a><a name="IDAVAKCD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning"></th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3396.575mil|Location2.X=3603.425mil|Location1.Y=2220.41mil|Location2.Y=2879.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3396.575mil|Location2.X=3603.425mil|Location1.Y=2220.41mil|Location2.Y=2879.981mil|Absolute=True">SMT Small Component Y1-XTAL (3500mil,2500mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4712.5mil|Location2.X=5057.244mil|Location1.Y=1527.284mil|Location2.Y=1912.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4712.5mil|Location2.X=5057.244mil|Location1.Y=1527.284mil|Location2.Y=1912.481mil|Absolute=True">Component U2-LM1117MPX-3.3/NOPB (4885mil,1670mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3818.5mil|Location2.X=4162.402mil|Location1.Y=2337.599mil|Location2.Y=2762.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3818.5mil|Location2.X=4162.402mil|Location1.Y=2337.599mil|Location2.Y=2762.481mil|Absolute=True">LCC Component U1-LPC1114FHN33/301 (4000mil,2500mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7268.008mil|Location2.X=7401.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7268.008mil|Location2.X=7401.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True">SMT Small Component R4-Res3 (7335mil,1780mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7083.008mil|Location2.X=7216.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7083.008mil|Location2.X=7216.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True">SMT Small Component R3-Res3 (7150mil,1780mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5653.008mil|Location2.X=5786.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5653.008mil|Location2.X=5786.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True">SMT Small Component R2-1K (5720mil,1780mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6348.008mil|Location2.X=6481.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6348.008mil|Location2.X=6481.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True">SMT Small Component R1-1K (6415mil,1780mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5836.063mil|Location2.X=5956.468mil|Location1.Y=1206.063mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5836.063mil|Location2.X=5956.468mil|Location1.Y=1206.063mil|Location2.Y=1913.481mil|Absolute=True">SIP Component P7-Header 6 (5890mil,1260mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1876.063mil|Location2.X=1996.468mil|Location1.Y=1406.063mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1876.063mil|Location2.X=1996.468mil|Location1.Y=1406.063mil|Location2.Y=1913.481mil|Absolute=True">SIP Component P6-Header 4 (1930mil,1460mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6006.063mil|Location2.X=6126.468mil|Location1.Y=1006.063mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6006.063mil|Location2.X=6126.468mil|Location1.Y=1006.063mil|Location2.Y=1913.481mil|Absolute=True">SIP Component P5-Header 8 (6060mil,1060mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1201.063mil|Location2.X=1321.468mil|Location1.Y=1006.063mil|Location2.Y=1513.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1201.063mil|Location2.X=1321.468mil|Location1.Y=1006.063mil|Location2.Y=1513.481mil|Absolute=True">SIP Component P4-Header 4 (1255mil,1060mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5106.063mil|Location2.X=5226.468mil|Location1.Y=1206.063mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5106.063mil|Location2.X=5226.468mil|Location1.Y=1206.063mil|Location2.Y=1913.481mil|Absolute=True">SIP Component P3-Header 6 (5160mil,1260mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6176.063mil|Location2.X=6296.468mil|Location1.Y=1506.063mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6176.063mil|Location2.X=6296.468mil|Location1.Y=1506.063mil|Location2.Y=1913.481mil|Absolute=True">Small Component P2-Header 3 (6230mil,1560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6926.063mil|Location2.X=7033.937mil|Location1.Y=1406.063mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6926.063mil|Location2.X=7033.937mil|Location1.Y=1406.063mil|Location2.Y=1913.481mil|Absolute=True">SIP Component P1-Header 4 (6980mil,1460mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4148.5mil|Location2.X=4660.221mil|Location1.Y=1196.063mil|Location2.Y=1914.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4148.5mil|Location2.X=4660.221mil|Location1.Y=1196.063mil|Location2.Y=1914.481mil|Absolute=True">Component J1-PWR2.5 (4420mil,1200mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1375.197mil|Location2.X=1655.113mil|Location1.Y=1216.024mil|Location2.Y=1511.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1375.197mil|Location2.X=1655.113mil|Location1.Y=1216.024mil|Location2.Y=1511.481mil|Absolute=True">SOIC Component IC1-SHT21 (1460mil,1285mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1705.5mil|Location2.X=1825.468mil|Location1.Y=1566.89mil|Location2.Y=1914.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1705.5mil|Location2.X=1825.468mil|Location1.Y=1566.89mil|Location2.Y=1914.481mil|Absolute=True">SMT Small Component D2-LED2 (1755mil,1685mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5275.039mil|Location2.X=5404.961mil|Location1.Y=1491.457mil|Location2.Y=1910.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5275.039mil|Location2.X=5404.961mil|Location1.Y=1491.457mil|Location2.Y=1910.481mil|Absolute=True">SMT Small Component D1-D Schottky (5340mil,1645mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3171.472mil|Location2.X=3341.452mil|Location1.Y=1666.26mil|Location2.Y=1911.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3171.472mil|Location2.X=3341.452mil|Location1.Y=1666.26mil|Location2.Y=1911.481mil|Absolute=True">SMT Small Component C10-C0805 (3205mil,1745mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2976.26mil|Location2.X=3121.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2976.26mil|Location2.X=3121.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True">SMT Small Component C9-C0805 (3055mil,1780mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3869.5mil|Location2.X=4100mil|Location1.Y=1531mil|Location2.Y=1914.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3869.5mil|Location2.X=4100mil|Location1.Y=1531mil|Location2.Y=1914.481mil|Absolute=True">SMT Small Component C8-EKE00BA210L00 (3985mil,1670mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3589.5mil|Location2.X=3820mil|Location1.Y=1531mil|Location2.Y=1914.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3589.5mil|Location2.X=3820mil|Location1.Y=1531mil|Location2.Y=1914.481mil|Absolute=True">SMT Small Component C7-EKE00BA210L00 (3705mil,1670mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1006.26mil|Location2.X=1151.992mil|Location1.Y=1346.473mil|Location2.Y=1513.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1006.26mil|Location2.X=1151.992mil|Location1.Y=1346.473mil|Location2.Y=1513.481mil|Absolute=True">SMT Small Component C6-C0805 (1085mil,1380mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2049.5mil|Location2.X=2280mil|Location1.Y=1531mil|Location2.Y=1914.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2049.5mil|Location2.X=2280mil|Location1.Y=1531mil|Location2.Y=1914.481mil|Absolute=True">SMT Small Component C5-EKE00BA210L00 (2165mil,1670mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3266mil|Location2.X=3385.968mil|Location1.Y=2321.26mil|Location2.Y=2566.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3266mil|Location2.X=3385.968mil|Location1.Y=2321.26mil|Location2.Y=2566.981mil|Absolute=True">SMT Small Component C4-C0805 (3300mil,2400mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3266mil|Location2.X=3385.968mil|Location1.Y=2533.008mil|Location2.Y=2778.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3266mil|Location2.X=3385.968mil|Location1.Y=2533.008mil|Location2.Y=2778.981mil|Absolute=True">SMT Small Component C3-C0805 (3300mil,2600mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3391.26mil|Location2.X=3536.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3391.26mil|Location2.X=3536.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True">SMT Small Component C2-0805 (3470mil,1780mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5456.26mil|Location2.X=5601.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\pslupski\Documents\Projects\HIGROTERM - Kopia\HIGROTERM1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5456.26mil|Location2.X=5601.992mil|Location1.Y=1746.473mil|Location2.Y=1913.481mil|Absolute=True">SMT Small Component C1-C0805 (5535mil,1780mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><hr>
+</body>
+</html>

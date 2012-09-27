@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=RS Pin=P7-4
+Removed Pin From Net: NetName=E Pin=P7-6
+Added Pin To Net: NetName=E Pin=P7-4
+Added Pin To Net: NetName=RS Pin=P7-6
+Added Member To Class: ClassName=HIGROTERM Member=Component D2 LED2
